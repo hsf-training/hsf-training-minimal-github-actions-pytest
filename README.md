@@ -1,1 +1,1 @@
-# hsf-training-minimal-github-actions-pytest
+# Minimal github actions example with pytest

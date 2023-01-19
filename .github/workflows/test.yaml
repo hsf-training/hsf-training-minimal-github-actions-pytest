@@ -1,0 +1,16 @@
+name: Test python package
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          python -m install --upgrade pip
+          pip install pytest
+      - name: Test
+        run: pytest
